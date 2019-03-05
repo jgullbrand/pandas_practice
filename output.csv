@@ -1,0 +1,11 @@
+,first_name,last_name,age,email,location_city,location_state,contacts_or_eyeglasses,vision_insurance
+0,Jamie,Gullbrand,25,jamie.gullbrand@email.com,Boston,Massachusetts,none,yes
+1,Zach,Tomkins,29,zach@email.com,Portland,Maine,contacts,no
+2,Adam,Jones,21,adamjones@email.com,Portland,Maine,eyeglasses,no
+3,Mookie,Betts,26,mookie@sox.com,Boston,Massachusetts,none,yes
+4,Tom,Gardiner,29,tom@email.com,Portland,Maine,contacts,no
+5,Grant,Gardiner,35,grant@email.com,Portland,Maine,contacts,no
+6,Timothy,Gardiner,37,timothy@email.com,Portland,Maine,contacts,no
+7,Alex,Cora,45,alex@sox.com,Boston,Massachusetts,contacts,yes
+8,Judy,Alison,69,judy@email.com,Buxton,Maine,eyeglasses,yes
+9,Jerry,Alison,72,jerry@email.com,Buxton,Maine,eyeglasses,no
