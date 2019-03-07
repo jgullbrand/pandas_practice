@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+
 
 #loading data from this csv file and saving it to the variable df
 df = pd.read_csv('eyecenter_data.csv')
@@ -51,8 +53,8 @@ contains_data = df[df['contacts_or_eyeglasses'].str.contains("glas")]
 
 # print to a csv only columns that contain a piece of a string 'Jam' in a first name. 
 def print_name():
-	data_name_contains = df[df['first_name'].str.contains("Jam")]
-	data_name_contains.to_csv('output_name_contains.csv')
+	data_name_contains = df[df['last_name'].str.contains("kins")]
+	data_name_contains.to_csv('output_name_contains.csv')	
 
 # practice resetting indices. Using [[]] when filtering multiple rows
 df2 = df.iloc[[1,3,5]]
@@ -125,8 +127,6 @@ df.rename(columns={
 	'last_name': 'LAST NAME',
 	}, inplace = True)
 
-
-
 #----------------------------
 # Pandas Aggregates 
 
@@ -142,7 +142,29 @@ print("Number of unique values: {}".format(df.age.nunique()))
 print("List of unique values: {}".format(df.age.unique()))
 
 
+# groupby method in pandas allows you to calculate based on groups of data
+# In this example, I'm grouping by city and looking at the average age. Should print totals for Portland, Buxton, Boston.
+age_by_city = df.groupby('location_city').age.mean()
+print("Grouped average ages by city: {}".format(age_by_city))
 
+vision_insurance = df.groupby('vision_insurance').customer_number.count()
+print("# of people with / without vision insurance: {}".format(vision_insurance))
+print(type(vision_insurance)) # Series
+
+# Using reset_index at the end will transform the type Series into a DataFrame
+vision_insurance = df.groupby('vision_insurance').customer_number.count().reset_index()
+print("# of people with / without vision insurance: {}".format(vision_insurance))
+print(type(vision_insurance)) # DataFrame - because we added .reset_index()
+
+# Calculating percentiles using numpy with a lambda function
+age_percentiles = df.groupby('location_city').age.apply(lambda x: np.percentile(x,75)).reset_index()
+print('75th percentile of age for each city')
+print(age_percentiles)
+
+
+#df.pivot(columns='ColumnToPivot',
+#         index='ColumnToBeRows',
+#         values='ColumnToBeValues')
 
 
 #print(df)

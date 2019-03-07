@@ -1,4 +1,4 @@
-,FIRST NAME,LAST NAME,AGE,EMAIL ADDRESS,location_city,location_state,contacts_or_eyeglasses,vision_insurance,customer_number,current_customer,age_discount,eye_exam_cost,age_ten_years_ago,Excited Name!,UPPERCASE NAME,first_initial,Older than 65?,Total Price including age discount if older than 65,customer_basic_info
+,FIRST NAME,LAST NAME,age,EMAIL ADDRESS,location_city,location_state,contacts_or_eyeglasses,vision_insurance,customer_number,current_customer,age_discount,eye_exam_cost,age_ten_years_ago,Excited Name!,UPPERCASE NAME,first_initial,Older than 65?,Total Price including age discount if older than 65,customer_basic_info
 0,Jamie,Gullbrand,25,jamie.gullbrand@email.com,Boston,Massachusetts,none,yes,2,Yes,0.8,150,15,Jamie!!!,JAMIE,J,False,150.0,"Full Name: Jamie Gullbrand, Email: jamie.gullbrand@email.com, Age: 25"
 1,Zach,Tomkins,29,zach@email.com,Portland,Maine,contacts,no,32,Yes,0.8,150,19,Zach!!!,ZACH,Z,False,150.0,"Full Name: Zach Tomkins, Email: zach@email.com, Age: 29"
 2,Adam,Jones,21,adamjones@email.com,Portland,Maine,eyeglasses,no,49,Yes,0.8,150,11,Adam!!!,ADAM,A,False,150.0,"Full Name: Adam Jones, Email: adamjones@email.com, Age: 21"
