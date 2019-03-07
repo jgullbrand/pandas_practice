@@ -1,4 +1,4 @@
-**Pandas Practice - loading & analyzing data in a single table**
+##**Pandas Practice - loading & analyzing data in a single table**
 
 I created a table of data in a csv file that models an eye center. Here's what eyecenter_data.csv looks like: 
 
@@ -25,7 +25,7 @@ With this table of data, I practiced functionality of pandas including:
 - Using groupby() to apply calculations to collections of the data.
 
 
-**Pandas Practice - Working with multiple tables**
+##**Pandas Practice - Working with multiple tables**
 
 I created three separate tables that show website analytics: visitors.csv, new_visitors.csv, session_duration.csv: 
 
